@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.contenedor {
+    max-width: 1300px;
+    width: 96%;
+    background: #ca5;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#logo {
+    width: 100%;
+    margin-bottom: 12px;
+}
+#logo h1 {
+    font-size: 48px;
+    background: #740;
+    color: #ca5;
+    padding: 10px;
+    text-align: center;
+}
+#bar {
+    display: none;
+}
+.abrir {
+    color: #ca5;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 20px;
+    padding: 0 10px;
+    background: #300;
+    border: 3px solid #ca5;
+    cursor: pointer;
+    display: none;
+}
+#menu {
+    width: 100%;
+    margin-bottom: 12px;
+}
+#menu ul {
+    display: flex;
+    justify-content: space-around;
+    background: #520;
+    padding: 15px;
+    list-style: none;
+}
+#menu a {
+    color: #ca5;
+    font-size: 20px;
+    padding: 15px;
+}
+#menu a:hover {
+    background: rgb(34,0,0,.9);
+}
+main {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+}
+#articulos {
+    width: 65%;
+    background: #540;
+}
+article {
+    position: relative;
+}
+article h1 {
+    font-weight: normal;
+    font-size: 32px;
+    color: #ca5;
+    margin-top: 16px;
+    text-align: center;
+}
+article p {
+    font-weight: normal;
+    font-size: 20px;
+    color: #ca5;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+article figure img {
+    width: 98%;
+    margin-left: 1%;
+    border: 5px solid #000;
+    display: block;
+    transition: all 1s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+article figure img:hover {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+article time {
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    width: 70px;
+    height: 80px;
+    background: #123;
+    padding: 10px 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgb(51,68,85);
+}
+.numero-dia {
+    font-size: 32px;
+    color: #ca5;
+    text-align: center;
+}
+.nombre-dia {
+    font-size: 16px;
+    color: #ca5;
+    text-align: center;
+}
+#info-adicional {
+    width: 35%;
+    background: #320;
+}
+#info-adicional h1 {
+    font-weight: normal;
+    font-size: 32px;
+    color: #ca5;
+    margin-top: 24px;
+    text-align: center;
+}
+#info-adicional p {
+    
+    font-size: 20px;
+    background: #000;
+    color: #ca5;
+    margin-top: 24px;
+   
+    line-height: 1.5;
+    text-align: center;
+    border: 5px solid #ca5;
+}
+#pie-logo {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 20px;
+    background: #600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.seccion-pie h1 {
+    font-weight: normal;
+    font-size: 28px;
+    color: #ca5;
+}
+.seccion-pie p a {
+    
+    font-size: 16px;
+    color: #ca5;
+}
+.seccion-pie address,
+.seccion-pie small {
+    color: #ca5;
+}
+.seccion-pie img {
+    width: 28px;
+}
+@media (max-width:570px) {
+    .abrir {
+        display: inline-block;
+    }
+    #menu {
+        position: absolute;
+        width: 96%;
+        background: #520;
+        z-index: 100;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all .5s;
+    }
+    #menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #bar:checked ~ #menu {
+        transform: scale(1);
+    }
+    #articulos {
+        width: 100%;
+    }
+    article time {
+        top: 60px;
+        left: 0;
+        width: 50px;
+        height: 60px;
+    }
+    .numero-dia {
+        font-size: 24px;
+    }
+    .nombre-dia{
+        font-size: 12px;
+    }
+    #info-adicional {
+        display: none;
+    }
+    #pie-logo {
+        justify-content: space-evenly;
+    }
+    .seccion-pie h1,
+    .seccion-pie p a{
+        display: none;
+    }
+}

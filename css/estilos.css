@@ -12,18 +12,17 @@ a {
 .contenedor {
     max-width: 1300px;
     width: 96%;
-    background: #ca5;
+    background: #ffd;
     margin: 0 auto;
     border-radius: 8px;
 }
 #logo {
     width: 100%;
-    margin-bottom: 12px;
 }
 #logo h1 {
     font-size: 48px;
     background: #740;
-    color: #ca5;
+    color: #ffd;
     padding: 10px;
     text-align: center;
 }
@@ -31,19 +30,18 @@ a {
     display: none;
 }
 .abrir {
-    color: #ca5;
+    color: #ffd;
     font-size: 36px;
     line-height: 36px;
     margin-left: 20px;
     padding: 0 10px;
     background: #300;
-    border: 3px solid #ca5;
+    border: 3px solid #ffd;
     cursor: pointer;
     display: none;
 }
 #menu {
     width: 100%;
-    margin-bottom: 12px;
 }
 #menu ul {
     display: flex;
@@ -53,7 +51,7 @@ a {
     list-style: none;
 }
 #menu a {
-    color: #ca5;
+    color: #ffd;
     font-size: 20px;
     padding: 15px;
 }
@@ -62,7 +60,6 @@ a {
 }
 main {
     width: 100%;
-    margin-bottom: 12px;
     display: flex;
 }
 #articulos {
@@ -75,14 +72,14 @@ article {
 article h1 {
     font-weight: normal;
     font-size: 32px;
-    color: #ca5;
+    color: #ffd;
     margin-top: 16px;
     text-align: center;
 }
 article p {
     font-weight: normal;
     font-size: 20px;
-    color: #ca5;
+    color: #ffd;
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
@@ -111,12 +108,12 @@ article time {
 }
 .numero-dia {
     font-size: 32px;
-    color: #ca5;
+    color: #ffd;
     text-align: center;
 }
 .nombre-dia {
     font-size: 16px;
-    color: #ca5;
+    color: #ffd;
     text-align: center;
 }
 #info-adicional {
@@ -126,7 +123,7 @@ article time {
 #info-adicional h1 {
     font-weight: normal;
     font-size: 32px;
-    color: #ca5;
+    color: #ffd;
     margin-top: 24px;
     text-align: center;
 }
@@ -134,12 +131,11 @@ article time {
     
     font-size: 20px;
     background: #000;
-    color: #ca5;
+    color: #ffd;
     margin-top: 24px;
-   
-    line-height: 1.5;
+   line-height: 1.5;
     text-align: center;
-    border: 5px solid #ca5;
+    border: 2px solid #ffd;
 }
 #pie-logo {
     width: 100%;
@@ -150,19 +146,8 @@ article time {
     justify-content: space-around;
     align-items: center;
 }
-.seccion-pie h1 {
-    font-weight: normal;
-    font-size: 28px;
-    color: #ca5;
-}
-.seccion-pie p a {
-    
-    font-size: 16px;
-    color: #ca5;
-}
-.seccion-pie address,
-.seccion-pie small {
-    color: #ca5;
+.seccion-pie address {
+    color: #ffd;
 }
 .seccion-pie img {
     width: 28px;
@@ -207,9 +192,5 @@ article time {
     }
     #pie-logo {
         justify-content: space-evenly;
-    }
-    .seccion-pie h1,
-    .seccion-pie p a{
-        display: none;
     }
 }

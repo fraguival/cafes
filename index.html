@@ -14,15 +14,15 @@
 
   <div class="contenedor">
       
-    <header id="logo">
-        <h1>cafe's</h1>
+    <header class="logo">
+        <h1 logo__titulo>cafe's</h1>
     </header>
 
     <input type="checkbox" id="bar">
-    <label for="bar" class="abrir">&#8801</label>
+    <label for="bar" class="logo__abrir">&#8801</label>
 
-    <nav id="menu">
-        <ul>
+    <nav class="navbar">
+        <ul class="navbar__menu">
             <li><a href="#">principal</a></li>
             <li><a href="#">fotos</a></li>
             <li><a href="#">videos</a></li>
@@ -32,44 +32,45 @@
 
     <main>
 
-        <section id="articulos">
-            <article>
-                <h1>frances.co</h1>
-                <p>cafe bistro</p>
-                <figure><img src="img/c-3.jpeg"></figure>
-                <time datetime="2021-07-27" pubdate>
-                    <div class="numero-dia">27</div>
-                    <div class="nombre-dia">martes</div>
+        <section class="articulos">
+            <article class="articulo">
+                <h1 class="articulo__titulo">frances.co</h1>
+                <p class="articulo__texto">cafe bistro</p>
+                <img class="articulo__imagen" src="img/c-3.jpeg">
+                <time class="articulo__fecha" datetime="2021-07-27" pubdate>
+                    <div class="articulo__numero-dia">27</div>
+                    <div class="articulo__nombre-dia">martes</div>
                 </time>
             </article>
-            <article>
-                <h1>les deux magots</h1>
-                <p>cafe bistro</p>
-                <figure><img src="img/c-6.jpg"></figure>
-                <time datetime="2021-07-19" pubdate>
-                    <div class="numero-dia">19</div>
-                    <div class="nombre-dia">lunes</div>
+            <article class="articulo">
+                <h1 class="articulo__titulo">les deux magots</h1>
+                <p class="articulo__texto">cafe bistro</p>
+                <img class="articulo__imagen" src="img/c-6.jpg">
+                <time class="articulo__fecha" datetime="2021-07-19" pubdate>
+                    <div class="articulo__numero-dia">19</div>
+                    <div class="articulo__nombre-dia">lunes</div>
                 </time>
             </article>
         </section>
 
-        <aside id="info-adicional">
-            <h1>informacion personal</h1>
-            <p>cita articulo uno</p>
-            <p>cita articulo dos</p>
+        <aside class="info">
+            <h1 class="info__titulo">informacion personal</h1>
+            <p class="info__texto">cita articulo uno</p>
+            <p class="info__texto">cita articulo dos</p>
         </aside>
 
     </main>
 
-    <footer id="pie-logo">
+    <footer class="footer">
         
-        <section class="seccion-pie">
-            <address>culiacan, sin.</address>
+        <section class="foot">
+            <address class="foot__direccion">culiacan, sin.</address>
+            <img class="foot__imagen" src="img/f-4.png">
             </section>
 
-        <section class="seccion-pie">
-            <img src="img/g-e.png">
-        </section>
+        
+            
+        
         
     </footer>
 

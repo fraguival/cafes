@@ -16,10 +16,10 @@ a {
     margin: 0 auto;
     border-radius: 8px;
 }
-#logo {
+.logo {
     width: 100%;
 }
-#logo h1 {
+.logo__titulo {
     font-size: 48px;
     background: #740;
     color: #ffd;
@@ -29,7 +29,7 @@ a {
 #bar {
     display: none;
 }
-.abrir {
+.logo__abrir {
     color: #ffd;
     font-size: 36px;
     line-height: 36px;
@@ -40,43 +40,43 @@ a {
     cursor: pointer;
     display: none;
 }
-#menu {
+.navbar {
     width: 100%;
 }
-#menu ul {
+.navbar__menu {
     display: flex;
     justify-content: space-around;
     background: #520;
     padding: 15px;
     list-style: none;
 }
-#menu a {
+.navbar__menu a {
     color: #ffd;
     font-size: 20px;
     padding: 15px;
 }
-#menu a:hover {
+.navbar__menu a:hover {
     background: rgb(34,0,0,.9);
 }
 main {
     width: 100%;
     display: flex;
 }
-#articulos {
+.articulos {
     width: 65%;
     background: #540;
 }
-article {
+.articulo {
     position: relative;
 }
-article h1 {
+.articulo__titulo {
     font-weight: normal;
     font-size: 32px;
     color: #ffd;
     margin-top: 16px;
     text-align: center;
 }
-article p {
+.articulo__texto {
     font-weight: normal;
     font-size: 20px;
     color: #ffd;
@@ -84,18 +84,12 @@ article p {
     margin-bottom: 16px;
     text-align: center;
 }
-article figure img {
+.articulo__imagen {
     width: 98%;
     margin-left: 1%;
     border: 5px solid #000;
-    display: block;
-    transition: all 1s;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-article figure img:hover {
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-}
-article time {
+.articulo__fecha {
     position: absolute;
     top: 60px;
     left: 16px;
@@ -106,28 +100,28 @@ article time {
     border-radius: 4px;
     box-shadow: 5px 5px 10px rgb(51,68,85);
 }
-.numero-dia {
+.articulo__numero-dia {
     font-size: 32px;
     color: #ffd;
     text-align: center;
 }
-.nombre-dia {
+.articulo__nombre-dia {
     font-size: 16px;
     color: #ffd;
     text-align: center;
 }
-#info-adicional {
+.info {
     width: 35%;
     background: #320;
 }
-#info-adicional h1 {
+.info__titulo {
     font-weight: normal;
     font-size: 32px;
     color: #ffd;
     margin-top: 24px;
     text-align: center;
 }
-#info-adicional p {
+.info__texto {
     
     font-size: 20px;
     background: #000;
@@ -137,60 +131,69 @@ article time {
     text-align: center;
     border: 2px solid #ffd;
 }
-#pie-logo {
+.footer {
     width: 100%;
     margin-bottom: 12px;
     padding: 20px;
     background: #600;
+}
+.foot {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.seccion-pie address {
+.foot__direccion {
     color: #ffd;
 }
-.seccion-pie img {
-    width: 28px;
+.foot__imagen {
+    width: 32px;
 }
 @media (max-width:570px) {
-    .abrir {
+    .logo__abrir {
         display: inline-block;
     }
-    #menu {
+    .navbar{
         position: absolute;
         width: 96%;
-        background: #520;
+        height: 100%;
+        background: rgba(255,255,255,.3);
         z-index: 100;
         transform: scale(0);
         transform-origin: top center;
         transition: all .5s;
     }
-    #menu ul{
+    .navbar__menu{
         flex-direction: column;
         align-items: center;
     }
-    #bar:checked ~ #menu {
+    .navbar__menu li{
+        margin-bottom: 50px;
+    }
+    .navbar__menu li:nth-child(1) {
+        margin-top: 100px;
+    }
+    #bar:checked ~ .navbar {
         transform: scale(1);
     }
-    #articulos {
+    .articulos {
         width: 100%;
     }
-    article time {
+    .articulo__fecha {
         top: 60px;
         left: 0;
         width: 50px;
         height: 60px;
     }
-    .numero-dia {
+    .articulo__numero-dia {
         font-size: 24px;
     }
-    .nombre-dia{
+    .articulo__nombre-dia{
         font-size: 12px;
     }
-    #info-adicional {
+    .info {
         display: none;
     }
-    #pie-logo {
+    .foot {
         justify-content: space-evenly;
     }
 }

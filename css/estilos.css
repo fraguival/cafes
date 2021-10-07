@@ -12,31 +12,31 @@ a {
 .contenedor {
     max-width: 1300px;
     width: 96%;
-    background: #ffd;
+    background: #fff;
     margin: 0 auto;
     border-radius: 8px;
 }
 .logo {
     width: 100%;
+    background: #740;
+    padding: 10px;
 }
 .logo__titulo {
     font-size: 48px;
-    background: #740;
-    color: #ffd;
-    padding: 10px;
+    color: #fff;
     text-align: center;
 }
 #bar {
     display: none;
 }
 .logo__abrir {
-    color: #ffd;
+    color: #fff;
     font-size: 36px;
     line-height: 36px;
     margin-left: 20px;
     padding: 0 10px;
     background: #300;
-    border: 3px solid #ffd;
+    border: 3px solid #fff;
     cursor: pointer;
     display: none;
 }
@@ -51,7 +51,7 @@ a {
     list-style: none;
 }
 .navbar__menu a {
-    color: #ffd;
+    color: #fff;
     font-size: 20px;
     padding: 15px;
 }
@@ -72,14 +72,14 @@ main {
 .articulo__titulo {
     font-weight: normal;
     font-size: 32px;
-    color: #ffd;
+    color: #fff;
     margin-top: 16px;
     text-align: center;
 }
 .articulo__texto {
     font-weight: normal;
     font-size: 20px;
-    color: #ffd;
+    color: #fff;
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
@@ -95,19 +95,19 @@ main {
     left: 16px;
     width: 70px;
     height: 80px;
-    background: #123;
+    background: #345;
     padding: 10px 5px;
     border-radius: 4px;
     box-shadow: 5px 5px 10px rgb(51,68,85);
 }
 .articulo__numero-dia {
     font-size: 32px;
-    color: #ffd;
+    color: #fff;
     text-align: center;
 }
 .articulo__nombre-dia {
     font-size: 16px;
-    color: #ffd;
+    color: #fff;
     text-align: center;
 }
 .info {
@@ -117,19 +117,20 @@ main {
 .info__titulo {
     font-weight: normal;
     font-size: 32px;
-    color: #ffd;
+    color: #fff;
     margin-top: 24px;
     text-align: center;
 }
 .info__texto {
-    
+    width: 90%;
     font-size: 20px;
     background: #000;
-    color: #ffd;
+    color: #fff;
+    margin: 0 auto;
     margin-top: 24px;
    line-height: 1.5;
     text-align: center;
-    border: 2px solid #ffd;
+    border: 2px solid;
 }
 .footer {
     width: 100%;
@@ -143,10 +144,10 @@ main {
     align-items: center;
 }
 .foot__direccion {
-    color: #ffd;
+    color: #fff;
 }
 .foot__imagen {
-    width: 32px;
+    width: 36px;
 }
 @media (max-width:570px) {
     .logo__abrir {

@@ -1,20 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
+    background: #200;
     font-family: 'Roboto', sans-serif;
-}
-a {
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 .contenedor {
     max-width: 1300px;
     width: 96%;
     background: #fff;
     margin: 0 auto;
-    border-radius: 8px;
 }
 .logo {
     width: 100%;
@@ -26,37 +23,36 @@ a {
     color: #fff;
     text-align: center;
 }
-#bar {
-    display: none;
-}
-.logo__abrir {
+
+.header__on, .header__off {
     color: #fff;
     font-size: 36px;
-    line-height: 36px;
     margin-left: 20px;
     padding: 0 10px;
-    background: #300;
-    border: 3px solid #fff;
+    background: #740;
+    border: 3px solid;
     cursor: pointer;
     display: none;
+    text-decoration: none;
 }
-.navbar {
-    width: 100%;
-}
-.navbar__menu {
+
+.menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background: #520;
     padding: 15px;
     list-style: none;
 }
-.navbar__menu a {
+.menu__link {
     color: #fff;
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
+    text-decoration: none;
 }
-.navbar__menu a:hover {
+.menu__link:hover {
     background: rgb(34,0,0,.9);
+    border-radius: 16px;
 }
 main {
     width: 100%;
@@ -111,6 +107,9 @@ main {
     text-align: center;
 }
 .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35%;
     background: #320;
 }
@@ -150,30 +149,25 @@ main {
     width: 36px;
 }
 @media (max-width:570px) {
-    .logo__abrir {
+    .header__on, .header__off {
         display: inline-block;
     }
-    .navbar{
+    .menu {
         position: absolute;
-        width: 96%;
-        height: 100%;
-        background: rgba(255,255,255,.3);
+        top: 12.5em;
+        left: 80px;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 70%;
+        background: rgba(85,34,0,.9);
         z-index: 100;
+        border-radius: 16px;
         transform: scale(0);
         transform-origin: top center;
         transition: all .5s;
     }
-    .navbar__menu{
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar__menu li{
-        margin-bottom: 50px;
-    }
-    .navbar__menu li:nth-child(1) {
-        margin-top: 100px;
-    }
-    #bar:checked ~ .navbar {
+    .menu:target {
         transform: scale(1);
     }
     .articulos {
